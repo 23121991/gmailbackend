@@ -9,6 +9,7 @@ dotenv.config();
 const cors = require("cors");
 
 
+mongoose.set('strictQuery',true);
 mongoose.connect(process.env.DB_URL,
     {useNewUrlParser:true, useUnifiedTopology:true},
     ()=>{
